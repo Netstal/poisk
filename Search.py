@@ -73,7 +73,7 @@ def IP_Track():
 def phoneGW():
     User_phone = input(
         f"\n {Wh}Введите номер телефона {Gr}Пример [+380xxxxxxxxx] {Wh}: {Gr}")  # ВВОД НОМЕРА ТЕЛЕФОНА
-    default_region = "ID"  # ПРЕДВАРИТЕЛЬНАЯ УСТАНОВКА СТРАНЫ ИНДОНЕЗИИ
+    default_region = "ID"
 
     parsed_number = phonenumbers.parse(User_phone, default_region)  # ПАРСИНГ НОМЕРА ТЕЛЕФОНА
     region_code = phonenumbers.region_code_for_number(parsed_number)
