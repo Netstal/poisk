@@ -33,7 +33,7 @@ def is_option(func):
 def IP_Track():
     ip = input(f"{Wh}\n Введите целевой IP : {Gr}")  # ВВОД IP-АДРЕСА
     print()
-    print(f' {Wh}============= {Gr}Инфа по IP {Wh}=============')
+    print(f' {Wh}============= {Gr}Информация по IP {Wh}=============')
     req_api = requests.get(f"http://ipwho.is/{ip}")  # API IPWHOIS.IS
     ip_data = json.loads(req_api.text)
     time.sleep(2)
